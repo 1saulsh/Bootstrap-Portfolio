@@ -1,0 +1,30 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    background-color: aqua;
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: relative;
+    border-bottom: 0;
+    border-top: 1px;
+    border-color:black;
+    width: 100%;
+    padding-top: 20px;
+    background-color:teal;
+  }
+  .col-md-6{
+    padding: 20px;
+}
+.panel-heading {
+  float:right
+}
+.nav navbar-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+}
