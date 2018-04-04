@@ -1,157 +1,131 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-  
-    <!-- The 3 meta tags below must come first in head -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- link html to the Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- link to Google Fonts -->
-    <script href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
-    </script>
-
-    <link rel="stylesheet" type="text/css"  href="Bootstrap-Portfolio/style.css">
-          
-    <!--title-->
-    <title>Heather Smile Portfolio</title>
-    
-    </head>
-
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Portfoli0 Gallery</title>
+  <!-- link html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+  <!--link to Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css"  href="assets/css/Bootstrap-Portfolio.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
     <body>
-
     <!--Header-->
     <div class="page-header">
-        <h1><strong> Heather Smile</strong></h1>
-        </div>
+      <h1><strong> Heather Smile</strong></h1>
+    </div>
       
-        <!-- Container Div -->
-        <div class="container">
-          <!-- Section 1: Navbar-->
-          <nav class="navbar navbar navbar-fixed-top">
-            <!-- Place Fluid Container in Navbar -->
-            <div class="container-fluid">
-              <!-- Designate a navbar heading  allows toggle for better mobile display-->
-              <div class="navbar-header">
-                <!-- Collapsible button -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <!-- navbar button elements screen reader and hamburger icon for mobile display-->
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span> <!-- first line -->
-                    <span class="icon-bar"></span> <!-- second line -->
-                    <span class="icon-bar"></span> <!-- third line -->
-                  </button>
-              
-              <!-- The links of our navbar -->
-              <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">   
-                  <li class="active"><a href="index.html">About</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                    </ul>
-              </div>
-              <!--/.nav-collapse -->
-            </div>
-            <!--/.container-fluid -->
+    <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-inverse">
+      <!-- Place Fluid Container in Navbar -->
+      <div class="container-fluid">
+        <!-- Designate a navbar heading  allows toggle for better mobile display-->
+        <div class="navbar-header">
+          <!-- Collapsible button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+            <!-- navbar button elements screen reader and hamburger icon for mobile display-->
+            <span class="icon-bar"></span> <!-- first line -->
+            <span class="icon-bar"></span> <!-- second line -->
+            <span class="icon-bar"></span> <!-- third line -->
+          </button>  
+          <!-- The links of our navbar -->
+          <a class="navbar-brand" href="#homepage"><img src="./assets/images/smile.jpg" width="45px" height= "45px"></a>
           </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class= "active"><a href="#">Home</a></li>
+              <li><a href="index.html">About Me</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>    
+            </ul>
+          </div>
         </div>
-
-    <h2> Portfolio</h2>
+      </div>
+    </nav>
+    <h2><strong> Portfolio</strong></h2>
             
-  <div class="main-container">
-    <!--was a div container-->
+    <!--Gallery div container-->
     <div class="container">
 
     <!-- first row with 1st column in image gallery-->
     <div class="row">
-      
-        <div class="col-md-4 col-sm-4">
-        <img src="images/coding.jpg"  class="thumbnail" alt="coding picture" width="300px" height="150px">
+      <div class="col-md-4 col-sm-6">
+        <img src="./assets/images/coding.jpg"  class="thumbnail" alt="coding picture" width="300px" height="150px">
         <!--Image title-->
         <p class="caption">Coding Future</p>
-        <!-- div closes 1st column-->
-        </div>
+      <!-- div closes 1st column-->
+      </div>
 
-        <!-- first row with second column in image gallery-->
-        <div class="col-md-4 col-sm-4">
+      <!-- first row with second column in image gallery-->
+      <div class="col-md-4 col-sm-6">
         <a href="https://github.com/1saulsh/week-4-game/blob/master/crystalsindex.html">
-        <img src="images/crystalbackground.png"  class="thumbnail" alt="crystal picture" width="300px" height="150px"> 
+        <img src="./assets/images/crystalbackground.png"  class="thumbnail" alt="crystal picture" width="300px" height="150px"> 
         </a>
         <!--Image title-->
-        <p class="caption"> Foodie for Life</p>
-        <!--div closes 2nd column-->
-        </div>
+        <p class="caption">Crystal Game</p>
+      <!--div closes 2nd column-->
+      </div>
+    <!--close 1st row-->
     </div>
-<div class="row">
-        <div class="col-md-4 col-sm-4">
-        <img src="images/brain.jpg" class="thumbnail" alt="brain picture" width="300px" height="150px">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <img src="./assets/images/hangman.png" class="thumbnail" alt="hangman picture" width="300px" height="150px">
         <!--Image title-->
-        <p class="caption">The Mind is a Terrible Thing to Waste</p>
-        <!-- closes 3rd column-->
-        </div>
+        <p class="caption">Hangman Game</p>
+      <!-- closes 3rd column-->
+      </div>
                 
-        <div class="col-md-4 col-sm-4">
-        <img src="images/Bowling.jpg"  class="thumbnail" alt="bowlingpicture" width="300px" height="150px">
+      <div class="col-md-4 col-sm-6">
+        <img src="./assets/images/jamesbond.jpg"  class="thumbnail" alt="James Bond picture" width="300px" height="150px">
         <!--Image title-->
-        <p class="caption">Tenback</p>
+        <p class="caption">James Bond Trivia</p>
         <!-- closes 4th column-->
-        </div>
-</div>
-<div class="row">    
-        <div class="col-md-4 col-sm-4">
-        <img src="images/eiffeltower.jpg"  class="thumbnail" alt="eiffeltower picture" width="300px" height="150px">
+      </div>
+    </div>
+    <div class="row">    
+      <div class="col-md-4 col-sm-6">
+        <img src="./assets/images/train.jpg"  class="thumbnail" alt="train picture" width="300px" height="150px">
         <!--Image title-->
-        <p class="caption">World Traveler</p>
-        <!-- closes 5th column-->
-        </div>
+        <p class="caption">Train Scheduler</p>
+      <!-- closes 5th column-->
+      </div>
         
-        <div class="col-md-4 col-sm-4">
-        <img src="images/scrabble.jpg"  class="thumbnail" alt="gameboard" width="300px" height="150px">
+      <div class="col-md-4 col-sm-6">
+        <img src="./assets/images/shoes.jpg"  class="thumbnail" alt="shoes" width="300px" height="150px">
         <!--Image title-->
-        <p class="caption">Scrabble Queen</p>
-        <!-- closes 6th column-->
-        </div>
-</div>
-      
-</div>
-    
-       <!-- contact box-->
-       <div class="container">
-  
-       <div class="col-md-3">
-
-          <div class="panel panel-default panel-info">
-               <div class="panel-heading">Connect With Me
-               </div>
-              
-                <a href="https://github.com/1saulsh"> <img src="images/github.png" alt="github icon" style= "width: 48px; height: 48px;">
-               </a>
-                     
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"> <img src="images/linkedin.png" alt="linkdin icon" style= "width: 48px; height:48px;">
-               </a>
-                                     
-               <a href="https://stackoverflow.com/users/9147704/heather-sauls"> <img src="images/stackoverflow.png" alt="stackoverflow icon" style="width: 48px; height:48px;">
-               <a/>                         
-          </div>
+        <p class="caption">Giftastic Shoes</p>
+      <!-- closes 6th column-->
       </div>
-      </div>
-</div>
-       <!--footer-->
-    <div class="footer">
-    <div class="container">
-    <div class="text-center">Copyright 2018 Heather Smile</p>
+    </div>   
     </div>
     
-
-    <!--end of row div-->
-    </div> 
-
-    <!-- end of container div-->
-    </div>          
+        <!-- contact box-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-info">
+                    <div class="panel-heading">Connect With Me
+                    </div>
+                      <a href="https://github.com/1saulsh"> <img src="assets/images/github.png" alt="github icon" style= "width: 48px; height: 48px;">
+                      </a>
+                      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"> <img src="assets/images/linkedin.png" alt="linkdin icon" style= "width: 48px; height: 48px;">
+                      </a>
+                      <a href="https://stackoverflow.com/users/9147704/heather-sauls"> <img src="assets/images/stackoverflow.png" alt="stackoverflow icon" style= "width: 48px; height: 48px;">
+                      <a/>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!--footer-->
+  <footer>
+    <div class="container">
+    <p class="text-center">Copyright 2018 Heather Smile</p>
+    </div>
+  </footer>       
 </body>
 </html>

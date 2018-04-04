@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me Bootstrap</title>
+    <!-- link html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/jpg" href=“favicon”>
+    <link rel="stylesheet" type="text/css"  href="assets/css/Bootstrap-Portfolio.css">    <!-- link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+    <!--link to Font Awesome-->
+    <link defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+</head>
+
+    <body>
+        
+    <div id="major-container">
+        <div class="container">
+            <a href="index.html" id="header">Heather Smile</a>
+        
+            <!-- Section 1: Navbar-->
+        <nav class="navbar navbar-inverse">
+            <!-- Place Fluid Container in Navbar -->
+            <div class="container-fluid">
+              <!-- Designate a navbar heading  allows toggle for better mobile display-->
+              <div class="navbar-header">
+                <!-- Collapsible button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                  <!-- navbar button elements screen reader and hamburger icon for mobile display-->
+                  <span class="icon-bar"></span> <!-- first line -->
+                  <span class="icon-bar"></span> <!-- second line -->
+                  <span class="icon-bar"></span> <!-- third line -->
+                </button>  
+                <!-- The links of our navbar -->
+                <a class="navbar-brand" href="#homepage"><img src="./assets/images/smile.jpg" width="45px" height= "45px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          
+            <h2>Contact Info</h2>
+
+            <div class="main-container">
+
+        <!-- contact box-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-info">
+                    <div class="panel-heading">Connect With Me
+                    </div>
+                      <a href="https://github.com/1saulsh"> <img src="assets/images/github.png" alt="github icon" style= "width: 48px; height: 48px;">
+                      </a>
+                      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"> <img src="assets/images/linkedin.png" alt="linkdin icon" style= "width: 48px; height: 48px;">
+                      </a>
+                      <a href="https://stackoverflow.com/users/9147704/heather-sauls"> <img src="assets/images/stackoverflow.png" alt="stackoverflow icon" style= "width: 48px; height: 48px;">
+                      <a/>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class = "row"> 
+            <div class="col-md-4 col-sm-6">
+                <h2> Contact</h2>
+                
+                <form id="contact-form">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="">
+                    <br>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="">
+                    <br>
+                  
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required=""></textarea>
+                    <br>
+
+                    <input id= "submit" type="submit" value="Submit">
+        
+                </form>
+            </div>
+        </div>                
+    <!--footer-->
+    <footer>
+        <div class="container">
+        <p class="text-center">Copyright 2018 Heather Smile</p>
+        </div>
+    </footer>  
+    </body>
+
+</html>
